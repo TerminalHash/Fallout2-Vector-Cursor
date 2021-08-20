@@ -1,12 +1,6 @@
-# Toolbox for X11 Mouse Cursors
+# Fallout 2 Vector Cursors
 
-This collection of files enables you to create a Linux cursor theme out of an SVG file. I used it to build my cursor theme cz-Viator (included in this package).
-
-![All cursors of my theme, in white and black](assets/preview.png)
-
-Maybe you don’t want to build your own theme and just download mine? I’ve prepared the [white cz-Viator](assets/cz-viator.zip?raw=true) and the variant [cz-Viator (Black)](assets/cz-viator-black.zip?raw=true). For Windows I made a trimmed-down version: [cz-Viator WIN](assets/cz-viator-WIN.zip?raw=true) and [cz-Viator (Black) WIN](assets/cz-viator-black-WIN.zip?raw=true). For installing instructions see [step 3](#install) in this *README* file.
-
-Gerhard Großmann (<postfach2b@web.de>), April 2018
+It's a redrawing of [cursor-toolbox](https://github.com/charakterziffer/cursor-toolbox) to Fallout 2-like cursor. This repo contains only the essentials.
 
 
 ## Presettings
@@ -86,15 +80,6 @@ To name your theme open *make.sh* with your prefered text editor. Fill in your o
 
 Your finished cursor theme is in the new folder with your given name. (For the next steps I’ll call that “theme folder”).
 
-### *2.4 (optional) Recreating Your Cursor Theme for Windows and Mac*
-
-If somebody knows how to do that for Mac, please let me know.
-
-**For Windows:** Keefer Rourke gave me a hint how to convert PNG images to Windows cursors. For his capitaine theme he used the free Windows software [Real World Cursor Editor](http://www.rw-designer.com/cursor-maker). A fair warning: Using that Editor is in no way as fast and easy as combining the PNGs with a simple shell command.
-
-Furthermore the Windows theme apparently can contain only a subset of the cursors, namely: left_ptr, help, pointing_hand, text, crosshair, not-allowed, pencil, move, up-arrow, ns-resize, ew-resize, nesw-resize, nwse-resize, progress and wait. In all other cases unfortunately the default cursors are displayed (e. g. zoom, grab, alias, col-resize).
-
-
 <h2 id="install">3 Installing and Using the Cursor Theme</h2>
 
 ### Instructions for Linux
@@ -107,25 +92,7 @@ To install the cursor theme system-wide, copy your folder to /usr/share/icons. Y
 
     sudo cp -r [theme-folder] usr/share/icons/[theme-folder]
 
-Now you have to set your cursor theme as the prefered one. Depending on your Linux distribution use the Gnome Tweak Tool or Unity Tweak Tool (there: Theme Settings).
+### Authors
+Original theme, scripts: **Gerhard Großmann** (postfach2b@web.de)
 
-On KDE Plasma go to Computer > System Settings > Workspace Appearence > Cursor Theme (or similar).
-
-For MATE search at System > Settings > Appearence > Theme …, XFC should be Settings > Mouse and Touchpad > Cursor Theme. There are other possibilities but I can’t list all of them here.
-
-### Instructions for Windows
-
-Unzip the downloaded folder and open in. There you find a file *INSTALL.inf*. Right click it and choose “Install”. It copys the cursor folder to `C:\Windows\Cursors\` and registers the cursors as a new available scheme.
-
-After that you can select the cz-Viator theme. For this right click on your desktop, pick “Customize” in the context menu. In the new window choose Designs, then Mouse cursor. Under Schemes you find “cz-Viator {Black}” in the drop down menu. Select it and confirm your preference with *OK*.
-
-**The Windows cursor theme has some flaws:** My theme has shadows by default, so you can’t use the Shadows setting. I only have produced the default size. If you need your cursors bigger, contact me and I see what I can do. Some cursors can’t (?) be set on Windows. Because of that, cz-Viator for Windows only contains the 15 cursors listed at step 2.4.
-
-
-## 4 Enjoying the Theme
-
-In the *assets* folder you’ll find a list of the cursors and equivalents, my own cursor themes and the file *test.html*. Open that with a browser and you can watch some of the cursors in action.
-
-To analyse which cursor is displayed I recommend using the theme Dummy X11 Cursors. It can be found at https://www.gnome-look.org/content/show.php?content=128170
-
-If you have further questions, ideas or need some help with my cursor toolbox I’m more than happy to give a hand. Please file an issue here at GitHub or simply mail me at <postfach2b@web.de> and we’ll figure that out 😀.
+Redrawed cursors and windmill, recoloring other: **TerminalHash** (lyashuk.voxx@gmail.com)
