@@ -3,7 +3,7 @@
 # Copyright (C) 2018 Gerhard Großmann
 
 # Set the name of your cursor theme
-themetitle='My Cursor Theme'
+themetitle='Fallout2'
 
 
 # For the folder name: Replace forbidden charakters with “-”
